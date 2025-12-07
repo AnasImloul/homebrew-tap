@@ -11,7 +11,7 @@ class AocGo < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/AnasImloul/aoc-go/releases/download/v0.1.8/aoc-go_0.1.8_darwin_amd64.tar.gz"
-      sha256 "446f5f7d56b756e744b61b65dd8431dcdcc0806e495c45d3826057e01dd07790"
+      sha256 "8c0c8ee8a86d5840d24e72e171732e2ddc11474259c8d3253c1c858d033ec46d"
 
       def install
         bin.install "aoc-go"
@@ -19,7 +19,7 @@ class AocGo < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/AnasImloul/aoc-go/releases/download/v0.1.8/aoc-go_0.1.8_darwin_arm64.tar.gz"
-      sha256 "cd371f319910cbb59f6a49b78a67c093620b5b544e6077ecaaffc925cea4051a"
+      sha256 "866fb82582ff861103663646043e1681e85289d7213117515d5399bc59411434"
 
       def install
         bin.install "aoc-go"
@@ -30,14 +30,14 @@ class AocGo < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/AnasImloul/aoc-go/releases/download/v0.1.8/aoc-go_0.1.8_linux_amd64.tar.gz"
-      sha256 "76373c52ce03a1e1292102ddcc8185795850cca15a0274d4b635c84b10208d0b"
+      sha256 "5ed5d0c844e890b40e1ff4f01b72d093f47e10e28342d0350a7bb57666f9b74e"
       def install
         bin.install "aoc-go"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/AnasImloul/aoc-go/releases/download/v0.1.8/aoc-go_0.1.8_linux_arm64.tar.gz"
-      sha256 "91b79559972893b33c4a59a9fc450f22813b41487996d0e83d452cb95790739d"
+      sha256 "1d08a6ce8f404d6232aaabedfc8caa475899415f3534a98d7301b6bc65ae0f57"
       def install
         bin.install "aoc-go"
       end
