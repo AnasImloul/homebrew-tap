@@ -5,21 +5,21 @@
 class AocGo < Formula
   desc "CLI tool for managing and running Advent of Code solutions in Go"
   homepage "https://github.com/AnasImloul/aoc-go"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AnasImloul/aoc-go/releases/download/v0.2.0/aoc-go_0.2.0_darwin_amd64.tar.gz"
-      sha256 "7a9081c34d384924581f7f90c2ee9070c459a9fff835dfa09f59323ca8e9a22d"
+      url "https://github.com/AnasImloul/aoc-go/releases/download/v0.2.1/aoc-go_0.2.1_darwin_amd64.tar.gz"
+      sha256 "1cc8a464faa36ab27a4f9703e18235c02b1a68e2772d4765c513a28b4ed12b4b"
 
       def install
         bin.install "aoc-go"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AnasImloul/aoc-go/releases/download/v0.2.0/aoc-go_0.2.0_darwin_arm64.tar.gz"
-      sha256 "fcb31f9aaa018033f03388e41ec1e15daee97eba0f5e55b482f4df9c0f7be56e"
+      url "https://github.com/AnasImloul/aoc-go/releases/download/v0.2.1/aoc-go_0.2.1_darwin_arm64.tar.gz"
+      sha256 "20d0bd29b57009a507a6fee39e39e598a4fbea32f185bb26ac2aa52041645570"
 
       def install
         bin.install "aoc-go"
@@ -29,15 +29,15 @@ class AocGo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AnasImloul/aoc-go/releases/download/v0.2.0/aoc-go_0.2.0_linux_amd64.tar.gz"
-      sha256 "66f2b1d09e366953125e16ebe43cb34b63663b870b7798b2cfab68552de255b1"
+      url "https://github.com/AnasImloul/aoc-go/releases/download/v0.2.1/aoc-go_0.2.1_linux_amd64.tar.gz"
+      sha256 "ab95a1f8b4bc4e9ad226483d27a72a6de965093b83358bf6849f9b9847b08fa7"
       def install
         bin.install "aoc-go"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AnasImloul/aoc-go/releases/download/v0.2.0/aoc-go_0.2.0_linux_arm64.tar.gz"
-      sha256 "8944fe826835f5697f92eee877f4950784dafb7c5edb38ffbdebf23f2d071ed1"
+      url "https://github.com/AnasImloul/aoc-go/releases/download/v0.2.1/aoc-go_0.2.1_linux_arm64.tar.gz"
+      sha256 "720e32d0b5030246f5ec2914e895aa1777475d09033a4a67e6fe0a8480d16740"
       def install
         bin.install "aoc-go"
       end
